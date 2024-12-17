@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fake Product Classifier</title>
+        <!-- Correctly link the CSS file from static -->
+         <link rel="stylesheet" href="/static/style.css">
+    </head>
+    
+<body>
+    <h1>Prediction Result:</h1>
+    <p><strong>{{ result }}</strong></p>
+    <p>Prediction Value: {{ prediction_value }}</p> <!-- Displaying the raw prediction value -->
+    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" style="max-width: 500px;">
+    <br><br>
+    <a href="/">Upload another image</a>
+</body>
+</html>

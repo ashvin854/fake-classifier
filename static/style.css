@@ -1,0 +1,150 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and padding for the whole body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input file button */
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Result Page Styles */
+.result-container {
+    margin-top: 30px;
+}
+
+/* Prediction Result */
+.result-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.result-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Prediction Value Styling */
+.result-container .prediction-value {
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Error Page */
+.error-container {
+    margin-top: 30px;
+}
+
+.error-container h1 {
+    color: #ff6f61;
+}
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    input[type="file"] {
+        font-size: 0.9em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+
+    .result-container p {
+        font-size: 1.2em;
+    }
+
+    .result-container .prediction-value {
+        font-size: 1em;
+    }
+}
+
+/* Large Screen (Desktop) Styles */
+@media (min-width: 1024px) {
+    .result-container img {
+        max-width: 50%;
+    }
+
+    .result-container p {
+        font-size: 2em;
+    }
+
+    .result-container .prediction-value {
+        font-size: 1.5em;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+}
